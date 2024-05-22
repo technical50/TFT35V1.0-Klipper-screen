@@ -1,13 +1,13 @@
 # TFT35V1.0-Klipper-screen
 
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/IMG_1216.jpg)
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/IMG_1216.jpg)
 
 First of all, you need to make a single hardware change on the screen.
 MKS TFT35 V1.0 screen, the interrupt output from the touchscreen is not soldered. This is easy to fix with just one jumper.  Without this refinement, there will be no sensor poll, so the touch does not work in the system.I don't have the slightest idea how the Marlinde sensor activates. 
-As far as I can see from the [schematics](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/sch_mks_tft35_int_ts.GIF), this change has no harm in marlin.
+As far as I can see from the [schematics](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/sch_mks_tft35_int_ts.GIF), this change has no harm in marlin.
 On the board, the jumper looks like
 
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg)
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg)
 
 it's not that hard, I had a harder time taking the photo.
 
@@ -34,7 +34,7 @@ git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
 ```
 If everything went according to plan, after the third command we will see the "window" of the installation.
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/kiauh.PNG)  
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/pictures/kiauh.PNG)  
 Install the following parts in sequence. If you get an error at some stage, you don't need to continue. you must first understand the cause of the error, eliminate it, and re-install the package that was not installed.
 Klipper (1 pc) - required. If you have two or more printers working from one raspberry, then I just don’t understand what you are doing in such a noob instruction - scroll on!
 Moonraker (1 pc) - required.
@@ -50,13 +50,13 @@ If everything is already working for you, including Klipperscreen on HDMI, then 
 
 # 1) 
 create Overlay
-copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from [archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
+copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from [archive](https://github.com/technical50/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
 in the console we enter the following commands (we compile the overlays):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 ```
 you should see something like this in the console:
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/overlayı.PNG) 
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/pictures/overlayı.PNG) 
 
 
 # 2) 
@@ -96,7 +96,7 @@ run the commands in sequence:
 ```shell
 sudo apt-get install cmake
 cd ~
-sudo git clone https://github.com/tasanakorn/rpi-fbcp
+sudo git clone https://github.com/technical50/rpi-fbcp
 cd rpi-fbcp/
 sudo mkdir build
 cd build
@@ -135,14 +135,14 @@ sudo reboot
 ```
 # 4)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
-installation [xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
+installation [xinput-calibrator](https://github.com/technical50/xlibinput_calibrator)
 
 ```shell
 sudo apt install libxi-dev libx11-dev libxrandr-dev
 ```
 then install and compile the calibrator itself:
 ```shell
-git clone https://github.com/kreijack/xlibinput_calibrator.git
+git clone https://github.com/technical50/xlibinput_calibrator.git
 cd xlibinput_calibrator/src/
 make
 ls -l xlibinput_calibrator
@@ -154,7 +154,7 @@ DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
 At this time, a proposal will appear on the screen to poke crosses Use a stylus type pen for more precision - we execute. The result of the work will be several lines in the console, such as this:
 
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/cabrator.PNG)
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/pictures/cabrator.PNG)
 
 Add this result to the file:
 
@@ -181,7 +181,7 @@ The touchscreen should work correctly.
 
 
 These pins are free 3,5,7,8,9,10,13,14,16,17.Why are there so many empty needles? Easy assembly for Raspberry pi. sockets are very expensive compared to their functions. A very cheap board that you won't be afraid to solder. Grey pins are busy for screen. 
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pinmap.png)
+![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/pinmap.png)
 
 # MKS TFT35 buzzer for Marlin like "M300: Play Tone"
 
