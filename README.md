@@ -1,5 +1,8 @@
 # TFT35V1.0-Klipper-screen "This Guide Taken From Mr Zafer Github"
+"Reason is in future some improvements on packages can make issue's possibility"
+"All Package's except kiauh stored on My Github"
 Original documet here= [Zafer](https://github.com/zavarci/TFT35V1.0-Klipper-screen)
+
 
 ![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/IMG_1216.jpg)
 
