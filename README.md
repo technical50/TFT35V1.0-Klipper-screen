@@ -130,9 +130,15 @@ We allow the service to work:
 sudo systemctl enable fbcp.service
 ```
 ```shell
-sudo reboot
+sudo reboot now
 ```
+"IMPORTANT NOTE !!!"
+IF YOU HAVE ON RASPBERRY PI UNDERVOLTAGE YOU NOT ABLE TO SEE KLIPPERSCREEN AFTER THIS REBOOT
+PLEASE SEARCH HOW TO FIX RASPPERY PI UNDERVOLTAGE ISSUE'S ON "GOOGLE"
+
 # 4)
+
+
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
 installation [xinput-calibrator](https://github.com/technical50/xlibinput_calibrator)
 
@@ -171,7 +177,7 @@ EndSection
 ```
 reboot
 ```shell
-sudo reboot
+sudo reboot now
 ```
 
 
