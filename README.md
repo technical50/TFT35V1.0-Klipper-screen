@@ -69,7 +69,6 @@ connect the screen overlay
 Then add the following lines to the end of the /boot/config.txt file:
 ```shell
 ###### MKS TFT35
-dtparam=spi=on
 hdmi_force_hotplug=1
 hdmi_cvt=hdmi_cvt=480 320 60 1 0 0 0
 hdmi_group=2
@@ -78,7 +77,7 @@ hdmi_mode=87
 display_rotate=0
 
 
-dtoverlay=mkstft35_rpi,rotate=90,speed=24000000,touch,touchgpio=17,fps=20
+dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
 ###### MKS TFT35 for 180 degree rotate please write ''rotate=270''
 ```
 
