@@ -27,7 +27,7 @@ after starting the system and connecting via SSH via [PUTTY](https://www.putty.o
 ```shell
 sudo apt install git
 ```
-Next, install[KIAUH](https://github.com/th33xitus/kiauh), through which we will install klipper and all its components. We sequentially enter the commands:
+Next, install [KIAUH](https://github.com/th33xitus/kiauh), through which we will install klipper and all its components. We sequentially enter the commands:
 ```shell
 cd ~
 git clone https://github.com/th33xitus/kiauh.git
