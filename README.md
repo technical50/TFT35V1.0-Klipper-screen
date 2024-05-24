@@ -1,5 +1,5 @@
 # TFT35V1.0-Klipper-screen "THIS DOCUMENTATION COPY"
-Original documet is [Zafer](https://https://github.com/zavarci)
+Original documet here= [Zafer](https://github.com/zavarci/TFT35V1.0-Klipper-screen)
 
 ![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/IMG_1216.jpg)
 
