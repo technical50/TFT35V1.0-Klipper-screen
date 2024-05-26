@@ -58,7 +58,9 @@ ve konsola aşağıdaki komut satırını girelim (overlay derleme):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 ```
+
 konsolda şöyle birşey görmeniz gerekir:
+
 ![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/pictures/overlayı.PNG) 
 
 
