@@ -53,7 +53,7 @@ Klipper screen kurulum yaptıysanız buraya kadar herşey tamam.
 
 # 1) 
 Overlay oluşturalım
-Ana dizine (/home/pi/) overlay dosyasını mkstft35_rpi.dts kopyalayalım [archive](https://github.com/technical50/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
+Ana dizine (/home/pi/) overlay dosyasını mkstft35_rpi.dts kopyalayalım [DTS Dosyalarını indirin](https://github.com/technical50/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
 ve konsola aşağıdaki komut satırını girelim (overlay derleme):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
