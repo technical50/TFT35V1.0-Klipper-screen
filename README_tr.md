@@ -13,7 +13,7 @@ Karttaki jumper bağlantısı şu şekilde.
 
 ![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg)
 
-Çok zor değil resim biraz elinizden geliyorsa bu kabloyu atarsınız.
+Çok zor değil resim biraz elinizden geliyorsa bu kabloyu lehimlersiniz.
 
 
 
@@ -205,7 +205,7 @@ Boştaki pinler 3,5,7,8,9,10,13,14,16,17.Gri pinler meşgul olan pinler ihtiyac�
 
 MKS TFT 35 de aktif bir buzzer var bunu klipper makroları ile kullanabilirsiniz.
 
-Rasppery için mikro kontrolcü bağlantısı zaten sahipsiniz eğer bağlantınız yooksa nasıl yapılacağına göz atın: [RPi Microcontroller service as described in Klipper documentation](https://www.klipper3d.org/RPi_microcontroller.html)
+Raspberry için mikro kontrolcü bağlantısı zaten sahipsiniz eğer bağlantınız yooksa nasıl yapılacağına göz atın: [RPi Microcontroller service as described in Klipper documentation](https://www.klipper3d.org/RPi_microcontroller.html)
 
 Bu satırları `printer.cfg` ye ekleyin:
 ```
