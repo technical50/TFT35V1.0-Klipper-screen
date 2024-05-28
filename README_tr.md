@@ -92,10 +92,8 @@ Moonraker ile bağlantı kopma sorunu varsa!!!
 aşağıdaki satırları config.txt dosyasında bulup önüne # koyarak deaktif hale getirelim!
 
 ```shell
-# Enable DRM VC4 V3D driver
-#dtoverlay=vc4-kms-v3d
-max_framebuffers=2
-
+sudo sed -i 's/^dtoverlay=vc4-fkms-v3d/#dtoverlay=vc4-fkms-v3d/' /boot/config.txt
+sudo sed -i 's/^dtoverlay=vc4-kms-v3d/#dtoverlay=vc4-kms-v3d/' /boot/config.txt
 ```
 
 Önemli bilgi!
