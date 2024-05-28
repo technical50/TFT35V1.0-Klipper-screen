@@ -94,6 +94,7 @@ dtoverlay=vc4-kms-v3d max_framebuffers=2
 
 ```shell
 sudo sed -i 's/dtoverlay=vc4-fkms-v3d/#dtoverlay=vc4-fkms-v3d/g' /boot/config.txt
+sudo sed -i 's/dtoverlay=vc4-kms-v3d/#dtoverlay=vc4-kms-v3d/g' /boot/config.txt
 ```
 
 Important note!
