@@ -94,10 +94,8 @@ aşağıdaki satırları config.txt dosyasında bulup önüne # koyarak deaktif 
 ```shell
 # Enable DRM VC4 V3D driver
 #dtoverlay=vc4-kms-v3d
-#max_framebuffers=2
+max_framebuffers=2
 
-# Disable compensation for displays with overscan
-#disable_overscan=1
 ```
 
 Önemli bilgi!
