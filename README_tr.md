@@ -13,7 +13,7 @@ Karttaki jumper bağlantısı şu şekilde.
 
 ![main](https://github.com/technical50/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg)
 
-Çok zor değil resim biraz elinizden geliyorsa bu kabloyu lehimlersiniz.
+Çok zor değil resimdeki kablo işi, biraz elinizden geliyorsa bu kabloyu lehimlersiniz.
 
 
 
