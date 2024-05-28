@@ -92,10 +92,8 @@ Important Issue On Moonraker not connection!!!
 Please check in config.txt below area and disable under # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d max_framebuffers=2
 
-```
-# Enable DRM VC4 V3D driver
-#dtoverlay=vc4-kms-v3d
-max_framebuffers=2
+```shell
+sudo sed -i 's/dtoverlay=vc4-fkms-v3d/#dtoverlay=vc4-fkms-v3d/g' /boot/config.txt
 ```
 
 Important note!
