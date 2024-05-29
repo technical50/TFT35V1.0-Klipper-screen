@@ -90,7 +90,7 @@ Save (Ctrl+S) and exit the nano editor (Ctrl+X).
 
 Important Issue On Moonraker not connection!!!
 Please check in config.txt below area and disable under # Enable DRM VC4 V3D driver
-dtoverlay=vc4-kms-v3d max_framebuffers=2
+dtoverlay=vc4-kms-v3d
 
 ```shell
 sudo sed -i 's/^dtoverlay=vc4-fkms-v3d/#dtoverlay=vc4-fkms-v3d/' /boot/config.txt
