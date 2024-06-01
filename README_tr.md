@@ -182,9 +182,9 @@ Ctrl+S Kaydet  Ctrl+X Çıkış yap
 Örneğin benim parametlerim böyleydi:
 ```shell
 Section "InputClass"
-	Identifier	"calibration"
-	MatchProduct	"ADS7846 Touchscreen"
-	Option		"CalibrationMatrix"	"-0.002508 1.113676 -0.059933 -1.082690 -0.008377 1.046131 0.000000 0.000000 1.000000 "
+        Identifier      "calibration"
+        MatchProduct    "ADS7846 Touchscreen"
+        Option          "CalibrationMatrix"     "-0.017865 1.120352 -0.058821 -1.077558 0.017017 1.031009 0.000000 0.000000 1.000000 "
 EndSection
 ```
 Yeniden başlat
