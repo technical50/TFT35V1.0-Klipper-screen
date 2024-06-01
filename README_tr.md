@@ -79,10 +79,10 @@ hdmi_cvt=hdmi_cvt=480 320 60 1 0 0 0
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
-display_rotate=0
+display_rotate=270
 
 
-dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
+dtoverlay=mkstft35_rpi,rotate=90,speed=24000000,touch,touchgpio=17,fps=20
 ###### MKS TFT35 for 180 degree rotate please write ''rotate=270''
 ```
 
